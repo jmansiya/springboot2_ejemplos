@@ -1,0 +1,5 @@
+package com.jmansilla.management;
+
+public class MailNotifierCustom {
+
+}
