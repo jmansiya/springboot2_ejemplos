@@ -70,6 +70,60 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+	            <groupId>io.fabric8</groupId>
+	            <artifactId>docker-maven-plugin</artifactId>
+	            <version>0.30.0</version>
+	            <configuration>
+	            	<verbose>true</verbose>
+	                <images>
+		                <image>
+			                <name>josemansilla/${project.artifactId}:${project.version}</name>
+			                <alias>api-gateway-zuul-2</alias>
+			                <build>
+			                    <from>frolvlad/alpine-oraclejre8</from>
+			                    <maintainer>José Mansilla García-Gil jmansiya@gmail.com</maintainer>
+			                    <tags>
+			                        <tag>latest</tag>
+			                        <tag>${project.version}</tag>
+			                    </tags>
+			                    <ports>8080</ports>
+			                    <assembly>
+			                  		<descriptorRef>artifact</descriptorRef>
+			                    </assembly>
+			                    <entryPoint>
+								   <!-- exec form  -->
+								   <exec>
+								     <arg>java</arg>
+								     <arg>-jar</arg>
+								     <arg>maven/${project.artifactId}-${project.version}.jar</arg>
+								   </exec>
+								</entryPoint>
+			                </build>
+			            </image>
+	                </images>	                
+	            </configuration>
+	
+	            <executions>
+	                <execution>
+	                    <id>build-imagen</id>
+	                    <phase>package</phase>
+	                    <goals>
+	                        <goal>build</goal>
+	                    </goals>
+	                </execution>
+	                <execution>
+			           <id>push-image</id>
+			           <phase>install</phase>
+			           <goals>
+			             <goal>push</goal>
+			           </goals>
+			           <configuration>
+			             <imageName>josemansilla/${project.artifactId}:${project.version}</imageName>
+			           </configuration>
+			         </execution>
+	            </executions>
+	        </plugin>						
 		</plugins>
 	</build>
 
