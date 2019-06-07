@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="org.springframework.cloud.config.server.EnableConfigServer"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.netflix.zuul.EnableZuulProxy"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
 <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.EnableAutoConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.client.discovery.EnableDiscoveryClient"/>
 <fullyQualifiedTypeName name="de.codecentric.boot.admin.server.config.EnableAdminServer"/>
@@ -13,4 +12,16 @@
 <fullyQualifiedTypeName name="de.codecentric.boot.admin.server.config.AdminServerProperties"/>
 <fullyQualifiedTypeName name="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler"/>
 <fullyQualifiedTypeName name="org.springframework.security.web.csrf.CookieCsrfTokenRepository"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="de.codecentric.boot.admin.server.notify.MailNotifier"/>
+<fullyQualifiedTypeName name="java.time.LocalTime"/>
+<fullyQualifiedTypeName name="com.jmansilla.management.MailNotifierCustom"/>
+<fullyQualifiedTypeName name="de.codecentric.boot.admin.server.config.AdminServerNotifierAutoConfiguration.MailNotifierConfiguration"/>
+<fullyQualifiedTypeName name="reactor.core.publisher.Mono"/>
+<fullyQualifiedTypeName name="org.springframework.scheduling.annotation.EnableScheduling"/>
+<fullyQualifiedTypeName name="org.springframework.scheduling.annotation.Scheduled"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="de.codecentric.boot.admin.server.domain.entities.Instance"/>
+<fullyQualifiedTypeName name="java.time.Duration"/>
 </qualifiedTypeNameHistroy>
