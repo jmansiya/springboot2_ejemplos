@@ -1,1 +1,15 @@
 .metadata/*
+cloud-stream-microservices/.classpath
+cloud-stream-microservices/.DS_Store
+.DS_Store
+cloud-stream-microservices/.factorypath
+cloud-stream-microservices/.mvn/wrapper/maven-wrapper.jar
+cloud-stream-microservices/.mvn/wrapper/maven-wrapper.properties
+cloud-stream-microservices/.mvn/wrapper/MavenWrapperDownloader.java
+cloud-stream-microservices/.settings/org.eclipse.core.resources.prefs
+cloud-stream-microservices/.settings/org.eclipse.jdt.apt.core.prefs
+cloud-stream-microservices/.settings/org.eclipse.jdt.core.prefs
+cloud-stream-microservices/.settings/org.eclipse.m2e.core.prefs
+cloud-stream-microservices/HELP.md
+cloud-stream-microservices/mvnw
+cloud-stream-microservices/mvnw.cmd
